@@ -1,12 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 //Icons
-import { RiHome3Line,RiFileCopyLine, RiWalletLine, RiBarChartLine } from "react-icons/ri";
+import { RiHome3Line,RiFileCopyLine, RiWalletLine, RiBarChartLine, RiMore2Fill,RiCloseFill } from "react-icons/ri";
 
 
 
 const Sidebar = () => {
+    const [showMenu,setShowMenu] = useState(false);
   return (
-    <div className='bg-primary-900 h-full fixed lg:static w-[80%] left-0 top-0'>
+    <>
+    <div 
+  className={`bg-primary-900 h-full fixed lg:static w-[80%] md:w-[40] lg:w-full transition-all duration-400 ${showMenu ? 'left-0' : '-left-full'}`}
+>
+
         {/* Profile */}
         <div className='flex flex-col justify-center items-center p-8 gap-2 h-[30vh]' >
             <img className="rounded-full h-20 w-20 object-cover ring-2 ring-gray-300" src="https://img.freepik.com/foto-gratis/retrato-joven-sonriente_1268-21877.jpg" alt="" />
@@ -40,6 +45,11 @@ const Sidebar = () => {
         
 
     </div>
+    {/* Button mobile */}
+    <button onClick={() =>setShowMenu(!showMenu)} className='lg:hidden fixed right-4 bottom-4 text-2xl text-white  bg-primary-900 p-3 rounded-full'>
+        {showMenu ? <RiCloseFill/> : <RiMore2Fill/>}
+    </button>
+    </>
   )
 }
 

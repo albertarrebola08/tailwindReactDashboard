@@ -4,9 +4,9 @@ function App() {
 
   return (
     <>
-      <div className='grid grid-cols-6 min-h-screen overflow-y-scroll'>
+      <div className='grid lg:grid-cols-4 xl:grid-cols-6 min-h-screen overflow-y-scroll'>
         <Sidebar/>
-        <main>Content</main>
+        <main className="lg:col-span-3 xl:col-span-5"></main>
       </div>
     </>
   )
