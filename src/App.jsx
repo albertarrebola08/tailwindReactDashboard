@@ -71,52 +71,70 @@ function App() {
           </div>
           </section>
           {/* Section 2  */}
-          <section className="grid grid-cols-2 gap-8 mt-10">
-              <div className="grid gap-8">
+          <section className="lg:grid grid-cols-2 gap-8 mt-10">
+              <div className="grid-cols-1 grid gap-8 ">
                 <h2 className="text-2xl font-bold">Recent invoices</h2>
-                {/* Card 4 */}
-                <div className="drop-shadow-md bg-white py-8 px-8 rounded-xl grid grid-rows-2 gap-12">
-                <div className="fila1 grid grid-cols-3 justify-between">
-                  <div className="columna1 flex flex-row gap-4">
-                    <img className="rounded-full object-cover w-[55px] h-[55px]" src="https://img.freepik.com/foto-gratis/chico-caucasico-atractivo-seguro-beige-pullon-sonriendo-ampliamente-mientras-pie-contra-gris_176420-44508.jpg" alt="" />
-                    <div className="flex justify-center flex-col">
-                      <h3 className="font-bold">Alexander Williams</h3>
-                      <p className="text-gray-500">1 day remaining</p>
-                    </div>
-                  </div>
-                  <div className="columna2 flex items-center justify-center">
-                    <span className="text-green-700 font-medium py-1 px-3 bg-green-200 rounded-full">Paid</span>
-                  </div>
-                  <div className="columna3 flex items-center justify-center">
-                    <span className="font-bold text-[16px]">&euro; 15,000.24</span>
+                <div className="bg-white p-8 rounded-xl shadow-2xl mb-8 flex flex-col gap-8">
+              {/* Card 1 */}
+              <div className="grid grid-cols-1 xl:grid-cols-4 items-center gap-4 mb-4">
+                <div className="col-span-2 flex items-center gap-4">
+                  <img
+                    src="https://img.freepik.com/foto-gratis/hombre-joven-hermoso-contento-camiseta-azul-que-senala-lado_1262-17845.jpg"
+                    className="w-14 h-14 object-cover rounded-xl"
+                  />
+                  <div>
+                    <h3 className="font-bold">Alexander Williams</h3>
+                    <p className="text-gray-500">JQ Holdings</p>
                   </div>
                 </div>
-                  <div className="fila2 grid grid-cols-3">
-                    <div className="columna1 flex flex-row gap-4 ">
-                      <img className="rounded-full object-cover w-[55px] h-[55px]" src="https://img.freepik.com/foto-gratis/mujer-bastante-joven-feliz-que-presenta-camara-parque-ciudad_1262-19158.jpg" alt="" />
-                      <div className="flex justify-center flex-col">
-                        <h3 className="font-bold">John Phillips</h3>
-                        <p className="text-gray-500">RRHH Recluter</p>
-                      </div>
-                    </div>
-                    <div className="columna2 flex items-center justify-center">
-                      <span className="bg-red-300 font-medium text-red-700 py-1 px-3 rounded-full">Late</span>
-                    </div>
-                    <div className="columna3 flex items-center justify-center">
-                      <span className="font-bold text-[16px]">&euro; 1,200.87</span>
-                    </div>
-                  </div>
-                  
+                <div>
+                  <span className="bg-green-100 text-green-800 py-1 px-3 rounded-full font-medium">
+                    Paid
+                  </span>
                 </div>
-              {/* Card  5*/}
-              <div className="flex flex-row justify-between p-8 bg-primary-900 rounded-xl">
-                <span><RiHashtag className="text-white text-4xl"/></span>
-                <div className="flex flex-col items-center">
-                  <h3 className="font-bold text-white">Engage with clients</h3>
-                  <p className="text-white">Join slack channel</p>
+                <div>
+                  <span className="font-bold">&euro; 1,200.87</span>
                 </div>
-                <button className="md:w-full lg:w-[50%] bg-primary-100 text-white py-2 px-4 rounded-xl">Join now</button>
               </div>
+              {/* Card 2 */}
+              <div className="grid grid-cols-1 xl:grid-cols-4 items-center gap-4 mb-4">
+                <div className="col-span-2 flex items-center gap-4">
+                  <img
+                    src="https://img.freepik.com/foto-gratis/alegre-joven-deportista-posando-mostrando-pulgares-arriba-gesto_171337-8194.jpg"
+                    className="w-14 h-14 object-cover rounded-xl"
+                  />
+                  <div>
+                    <h3 className="font-bold">Jhon Philips</h3>
+                    <p className="text-gray-500">Inchor Techs</p>
+                  </div>
+                </div>
+                <div>
+                  <span className="bg-red-100 text-red-800 py-1 px-3 rounded-full font-medium">
+                    Late
+                  </span>
+                </div>
+                <div>
+                  <span className="font-bold">&euro; 12,998.88</span>
+                </div>
+              </div>
+            </div>
+
+
+              {/* Card  5*/}
+              <div className="flex flex-col lg:flex-row lg:flex-wraplg:justify-between p-8 bg-primary-900 rounded-xl mb-8">
+                <div className="flex items-center">
+                  <span><RiHashtag className="text-white text-4xl" /></span>
+                  <div className="flex flex-col ml-4"> {/* Envoltura para icono y contenido */}
+                    <h3 className="font-bold text-white">Engage with clients</h3>
+                    <p className="text-white">Join slack channel</p>
+                  </div>
+                </div>
+                <button className="md:w-[50%] lg:w-[50%] bg-primary-100 text-white py-2 px-4 rounded-xl mt-8 lg:mt-0">
+                  Join now
+                </button>
+              </div>
+
+
             </div>
             
             <div className="flex flex-col gap-8">
@@ -124,7 +142,7 @@ function App() {
               {/* Card 6 */}
               <div className="drop-shadow-md p-8 bg-white rounded-xl flex flex-col gap-8">
                 <div className="flex flex-col lg:flex-row xl:flex-row lg:justify-between">
-                  <div className="flex flex-row gap-4 ">
+                  <div className="flex flex-row flex-row-2 gap-4 ">
                     <img className="rounded-full object-cover w-[55px] h-[55px]" src="https://img.freepik.com/vector-premium/diseno-logotipo-concepto-creativo-dream-architecture_375539-16.jpg" alt="" />
                     <div className="flex justify-center flex-col">
                       <h3 className="font-bold">Dream Arquitechture</h3>
@@ -141,7 +159,7 @@ function App() {
                   <p>Looking for a talented brand designer to create all the branding materials my new startup.</p>
                 </div>
 
-                <div className="flex justify-between bg-primary-100/10 py-8 px-4 rounded-xl">
+                <div className="flex justify-between flex-wrap gap-4 bg-primary-100/10 py-8 px-4 rounded-xl">
                   <div className="flex items-baseline gap-2">
                     <span className="text-2xl font-bold">8,700&euro;</span><span className="text-gray-500">/month</span>
                   </div>
