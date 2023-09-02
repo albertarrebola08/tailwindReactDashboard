@@ -9,14 +9,14 @@ const Sidebar = () => {
   return (
     <>
     <div 
-  className={`bg-primary-900 h-full fixed lg:static w-[80%] md:w-[40] lg:w-full transition-all duration-400 ${showMenu ? 'left-0' : '-left-full'}`}
+  className={`fixed bg-primary-900 h-full lg:static w-[80%] md:w-[40] lg:w-full transition-all z-50 duration-400 ${showMenu ? 'left-0' : '-left-full'}`}
 >
 
         {/* Profile */}
         <div className='flex flex-col justify-center items-center p-8 gap-2 h-[30vh]' >
             <img className="rounded-full h-20 w-20 object-cover ring-2 ring-gray-300" src="https://img.freepik.com/foto-gratis/retrato-joven-sonriente_1268-21877.jpg" alt="" />
             <h1 className='text-xl text-white font-bold'>Albert Arrebola</h1>
-            <p className='bg-primary-100 py-1 px-3 rounded-full text-white'>Pro level</p>
+            <p className='bg-primary-100 py-2 px-4 rounded-full text-white'>Pro level</p>
         </div>
         <div className='bg-primary-300 p-8 rounded-tr-[100px] h-[70vh] flex flex-col justify-between gap-8'>
             {/* Nav vertical */}
@@ -46,7 +46,7 @@ const Sidebar = () => {
 
     </div>
     {/* Button mobile */}
-    <button onClick={() =>setShowMenu(!showMenu)} className='lg:hidden fixed right-4 bottom-4 text-2xl text-white  bg-primary-900 p-3 rounded-full'>
+    <button onClick={() =>setShowMenu(!showMenu)} className='z-50 lg:hidden fixed right-4 bottom-4 text-2xl text-white  bg-primary-900 p-3 rounded-full'>
         {showMenu ? <RiCloseFill/> : <RiMore2Fill/>}
     </button>
     </>

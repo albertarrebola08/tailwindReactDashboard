@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Estilo de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 3px; /* Ancho de la barra de desplazamiento */
+  
+}
+
+/* Estilo del riel de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background: transparent; /* Fondo transparente para ocultar el riel */
+
+}
+
+/* Estilo del pulgar (barra de desplazamiento) */
+::-webkit-scrollbar-thumb {
+  background: #000; /* Color negro del pulgar */
+  border-radius: 10px; /* Bordes redondeados del pulgar */
+ 
+}
+
+/* Estilo del pulgar al pasar el mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: #333; /* Color del pulgar al pasar el mouse */
+}
