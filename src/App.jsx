@@ -1,6 +1,5 @@
 import Sidebar from "./assets/components/shared/Sidebar"
 import Header from "./assets/components/shared/Header"
-import Footer from "./assets/components/shared/Footer"
 import { RiLineChartLine,RiHashtag } from "react-icons/ri"
 
 function App() {
@@ -126,7 +125,7 @@ function App() {
               <div className="flex flex-col md:flex-row md:justify-between lg:flex-row lg:justify-between p-8 bg-primary-900 rounded-xl mb-8">
                 <div className="flex items-center justify-between lg:w-[50%] md:w-[50%]">
                   <span><RiHashtag className="text-white text-4xl" /></span>
-                  <div className="flex flex-col ml-4"> {/* Envoltura para icono y contenido */}
+                  <div className="flex flex-col ml-4"> 
                     <h3 className="font-bold text-white">Engage with clients</h3>
                     <p className="text-white">Join slack channel</p>
                   </div>
