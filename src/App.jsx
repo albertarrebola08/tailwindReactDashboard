@@ -1,6 +1,8 @@
 import Sidebar from "./assets/components/shared/Sidebar"
 import Header from "./assets/components/shared/Header"
+import Footer from "./assets/components/shared/Footer"
 import { RiLineChartLine,RiHashtag } from "react-icons/ri"
+
 function App() {
 
   return (
@@ -17,7 +19,7 @@ function App() {
               <div className="flex">
                 <span className="text-5xl text-white">&euro; 8.350</span>
               </div>
-              <span className="rounded-full py-1 px-3 bg-primary-300/80">+10% since last month</span>
+              <span className="rounded-full bg-primary-300/80 w-auto p-2 text-center">+10% since last month</span>
             </div>
             
             {/* Card 2 */}
@@ -39,7 +41,7 @@ function App() {
                   <p className="text-gray-500">8 this month</p>
                 </div>
               </div>
-              <div className="flex items gap-2">
+              <div className="items gap-2 flex flex-wrap">
                 <span className="text-gray-600 bg-primary-100/20 rounded-full py-1 px-4 text-[14px]">Mobile app</span>
                 <span className="text-gray-600 bg-primary-100/20 rounded-full py-1 px-4 text-[14px]">Branding</span>
               </div>
@@ -121,15 +123,15 @@ function App() {
 
 
               {/* Card  5*/}
-              <div className="flex flex-col lg:flex-row lg:flex-wraplg:justify-between p-8 bg-primary-900 rounded-xl mb-8">
-                <div className="flex items-center">
+              <div className="flex flex-col md:flex-row md:justify-between lg:flex-row lg:justify-between p-8 bg-primary-900 rounded-xl mb-8">
+                <div className="flex items-center justify-between lg:w-[50%] md:w-[50%]">
                   <span><RiHashtag className="text-white text-4xl" /></span>
                   <div className="flex flex-col ml-4"> {/* Envoltura para icono y contenido */}
                     <h3 className="font-bold text-white">Engage with clients</h3>
                     <p className="text-white">Join slack channel</p>
                   </div>
                 </div>
-                <button className="md:w-[50%] lg:w-[50%] bg-primary-100 text-white py-2 px-4 rounded-xl mt-8 lg:mt-0">
+                <button className=" bg-primary-100 mt-8 text-white py-2 px-4 rounded-xl md:mt-0 lg:mt-0">
                   Join now
                 </button>
               </div>
@@ -141,7 +143,7 @@ function App() {
               <h2 className="text-2xl font-bold">Recommended projects</h2>
               {/* Card 6 */}
               <div className="drop-shadow-md p-8 bg-white rounded-xl flex flex-col gap-8">
-                <div className="flex flex-col lg:flex-row xl:flex-row lg:justify-between">
+                <div className="flex flex-col lg:flex-row xl:flex-row lg:justify-between lg:items-center">
                   <div className="flex flex-row flex-row-2 gap-4 ">
                     <img className="rounded-full object-cover w-[55px] h-[55px]" src="https://img.freepik.com/vector-premium/diseno-logotipo-concepto-creativo-dream-architecture_375539-16.jpg" alt="" />
                     <div className="flex justify-center flex-col">
@@ -150,7 +152,7 @@ function App() {
                     </div>
                   </div>
                   <div>
-                    <button className="w-auto justify-end mt-8 bg-primary-100 text-white py-2 px-4 rounded-full hover:bg-primary-300">Design</button>
+                    <button className="w-auto justify-end lg:mt-0 mt-8 bg-primary-100 text-white py-2 px-4 rounded-full hover:bg-primary-300">Design</button>
                   </div> 
                 </div>
                 
@@ -173,6 +175,7 @@ function App() {
           </section>
 
           </main>
+        
       </div>
     </>
   )

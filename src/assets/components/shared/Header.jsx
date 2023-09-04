@@ -3,7 +3,7 @@ import { RiSearch2Line } from "react-icons/ri";
 const Header = () => {
   return (
     <div className="flex items-center justify-between flex-col md:flex-row gap-4 ">
-        <h1 className='text-3xl md:3xl font-bold '>🌞Good morning, <span className='text-primary-100'>Albert</span></h1>
+        <h1 className='text-3xl md:3xl font-bold text-center mb-4'><span className='mr-3'>🌞</span>Good morning, <span className='text-primary-100'>Albert</span></h1>
         <form action="" className='md:w-auto w-full'>
             <div className='relative'>
                 <RiSearch2Line className='absolute top-1/2 -translate-y-1/2 left-2'/>
