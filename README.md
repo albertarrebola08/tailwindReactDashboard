@@ -1,7 +1,7 @@
 # React + Tailwind (Vite)
 
 This is an example dashboard in order to improve my skills and knowledge of React and Tailwind using the environment "Vite".
-I have deployed by Netlify and **you can see the demo here**: https://dashboard-tailwind-react.netlify.app/
+I have deployed by Netlify and **you can see the demo <a href="https://dashboard-tailwind-react.netlify.app/">here</a>**
 
 ## Technologies
 
