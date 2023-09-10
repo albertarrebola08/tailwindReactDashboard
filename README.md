@@ -1,6 +1,7 @@
 # React + Tailwind (Vite)
 
 This is an example dashboard in order to improve my skills and knowledge of React and Tailwind using the environment "Vite".
+I have deployed by Netlify and **you can see the demo here**: https://dashboard-tailwind-react.netlify.app/
 
 ## Technologies
 
@@ -18,7 +19,7 @@ Only used react states for a small functionality in the Sidebar (to change de vi
     ${showMenu ? 'left-0' : '-left-full'}
 
     /*and then in the mobile button*/
-    <button onClick={() =>setShowMenu(!showMenu)} className='z-50 lg:hidden fixed right-4 bottom-4 text-2xl text-white        bg-primary-900 p-3 rounded-full'>
+    <button onClick={() =>setShowMenu(!showMenu)} className='z-50 lg:hidden fixed right-4 bottom-4 text-2xl text-white bg-primary-900 p-3 rounded-full'>
         {showMenu ? <RiCloseFill/> : <RiMore2Fill/>}
     </button>
 
@@ -54,7 +55,7 @@ Example in code:
                 </div>
 
 ### Vite
-![image](https://github.com/albertarrebola08/tailwindReactDashboard/assets/104431726/583ccc46-1681-4b77-989c-b1e998d21a78)
+<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--NedFdFRX--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/h4jbiijckmk65al45e6x.jpg" width="160px" height="90px">
 
 I have chosen Vite as my development environment for this React and Tailwind CSS dashboard project due to its outstanding speed in project generation and hot reloading.
 I prefer Vite because of this reasons:
@@ -68,4 +69,10 @@ Certainly, here are the translated points:
 3. **Native Support for ECMAScript Modules (ESM)**: Vite allows you to leverage JavaScript's ESM (ECMAScript Modules) natively.
 
 4. **Simplified Configuration**: Vite's configuration is based on an easy-to-understand and modify _vite.config.js_ file, simplifying project customization and setup.
+
+
+<hr>
+
+Thanks to @jotredev (YT) <br>
+Dashboard origin template: Dashboard UI
 
